@@ -1,10 +1,10 @@
 var puzzle = "";
-
+var phrase;
 $(document).ready(function(){
 
   $("#phrase").submit(function(event){
     event.preventDefault();
-    var phrase = $("#sentence").val().split("");
+    phrase = $("#sentence").val().split("");
 
     for (var index = 0; index <= phrase.length-1; index++){
       if (phrase[index] === "a" || phrase[index] === "A"){
@@ -21,8 +21,13 @@ $(document).ready(function(){
         puzzle += phrase[index];
       }
     }
-    $("#phrase").hide();
+    $("#phrase, .answer").hide();
     $("#result").show();
-    $("h3").text(puzzle);
+    $("span").text('"' + puzzle + '"');
   });
+
+    $("#answer").click(function(){
+      $(".answer").show();
+      $(".answer").text('"' + (phrase.join("")) + '"');
+    });
 });
