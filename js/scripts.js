@@ -22,23 +22,23 @@ $(document).ready(function(){
       }
     }
 
-    $("#phrase, .answer").hide();
+    $("#phrase, .answer, .well").hide();
     $("#result").show();
     $("span").text('"' + puzzle + '"');
   });
 
     $("#answer").click(function(){
-      $(".ten").hide().delay(1000).fadeToggle();
-      $(".nine").hide().delay(1000).fadeToggle(800);
-      $(".eight").hide().delay(1000).fadeToggle(1100);
-      $(".seven").hide().delay(1000).fadeToggle(1900);
-      $(".six").hide().delay(1000).fadeToggle(2500);
-      $(".five").hide().delay(1000).fadeToggle(3600);
-      $(".four").hide().delay(1000).fadeToggle(4600);
-      $(".three").hide().delay(1000).fadeToggle(5600);
-      $(".two").hide().delay(1000).fadeToggle(6700);
-      $(".one").hide().delay(1000).fadeToggle(6800);
-      $(".answer").hide().delay(5000).fadeToggle();
+      $(".ten").hide().delay(5000).fadeToggle();
+      $(".nine").hide().delay(5000).fadeToggle(800);
+      $(".eight").hide().delay(5000).fadeToggle(1100);
+      $(".seven").hide().delay(5000).fadeToggle(1900);
+      $(".six").hide().delay(5000).fadeToggle(2500);
+      $(".five").hide().delay(5000).fadeToggle(3600);
+      $(".four").hide().delay(5000).fadeToggle(4600);
+      $(".three").hide().delay(5000).fadeToggle(5600);
+      $(".two").hide().delay(5000).fadeToggle(6700);
+      $(".one").hide().delay(5000).fadeToggle(6800);
+      $(".answer").hide().delay(5000).fadeToggle(10000);
       $(".answer").text('"' + (phrase.join("")) + '"');
     });
 });

@@ -1,3 +1,15 @@
 #result, p {
   display: none;
 }
+
+body, html {
+  background-image: url(../img/wordbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.panel-header, .panel-body {
+  background-color: #b3c3dd;
+}

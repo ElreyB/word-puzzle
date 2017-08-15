@@ -12,28 +12,38 @@
       <div class="page-header">
         <h1>Word Puzzle <small>WHAT'S THAT SENTENCE!</small></h1>
       </div>
-      <form id="phrase">
-        <div class="form-group">
-          <label for="sentence">What is your sentence:</label>
-          <input id="sentence" type="text" name="sentence" class="form-control">
-        </div>
-        <button type="submit" class="btn">Submit</button>
-      </form>
+      <div class="well">
+        <form id="phrase">
+          <div class="form-group">
+            <label for="sentence">What is your sentence:</label>
+            <input id="sentence" type="text" name="sentence" class="form-control">
+          </div>
+          <button type="submit" class="btn-success">Submit</button>
+        </form>
+      </div>
 
       <div id="result">
-        <h3><span class="result"></span></h3>
-        <button id="answer" class="btn">Show Answer</button>
-        <p class="ten">10</p>
-        <p class="nine">9</p>
-        <p class="eight">8</p>
-        <p class="seven">7</p>
-        <p class="six">6</p>
-        <p class="five">5</p>
-        <p class="four">4</p>
-        <p class="three">3</p>
-        <p class="two">2</p>
-        <p class="one">1</p>
-        <h3><span class="answer"></span></h3>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+              <h3><span class="result"></span></h3>
+          </div>
+        </div>
+        <button id="answer" class="btn-success">Show Answer</button>
+        <br>
+        <br>
+        <div class="panel-body">
+          <p class="ten">10</p>
+          <p class="nine">9</p>
+          <p class="eight">8</p>
+          <p class="seven">7</p>
+          <p class="six">6</p>
+          <p class="five">5</p>
+          <p class="four">4</p>
+          <p class="three">3</p>
+          <p class="two">2</p>
+          <p class="one">1</p>
+          <h3><span class="answer"></span></h3>
+        </div>
       </div>
     </div>
   </body>
