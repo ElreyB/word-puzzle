@@ -5,9 +5,8 @@ $(document).ready(function(){
   $("#phrase").submit(function(event){
     event.preventDefault();
     var phrase = $("#sentence").val().split("");
-    console.log(phrase)
+
     for (var index = 0; index <= phrase.length-1; index++){
-      console.log(phrase[index]);
       if (phrase[index] === "a" || phrase[index] === "A"){
         puzzle += "-";
       } else if (phrase[index] === "e" || phrase[index] === "E"){
@@ -22,6 +21,8 @@ $(document).ready(function(){
         puzzle += phrase[index];
       }
     }
-    console.log(puzzle)
+    $("#phrase").hide();
+    $("#result").show();
+    $("h3").text(puzzle);
   });
 });
